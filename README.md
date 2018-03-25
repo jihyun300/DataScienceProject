@@ -28,7 +28,7 @@ Preference Shooting(취향저격프로젝트)
 마지막으로 apparel search 웹사이트를 통해 342개의 apparel brand 리스트를 얻었다.
 아래 screenshot은 우리가 모은 영화와 음악 데이터셋의 일부이다.
 <p align="center">
- <img src="screenshots/prefer-movie.png" width="50%"></img> <img src="screenshots/prefer-music.png" width="50%"></img>
+ <img src="screenshots/prefer-movie.png" width="40%"></img> <img src="screenshots/prefer-music.png" width="40%"></img>
 </p>
 
 ## 2. Search Instagram user ID including movie or music tags
@@ -39,5 +39,5 @@ Preference Shooting(취향저격프로젝트)
 '''
 > 예를 들어 영화제목이 "Harry Potter and the Deathly Hallows: Part 2" 라면, 
 >  생성 가능한 검색어는 "harry potter", "harry potter and the deathly hallows", "the deathly hallows", "Harry Potter and the Deathly Hallows: Part 2" 등이 될 수 있다.
-이렇게 검색한 영화들로 이 영화를 태그한 사용자 정보를 모아 <instagram/user_movie_DB.txt>로 만들었다.
+이렇게 검색한 영화들로 이 영화를 태그한 사용자 정보를 모아 <./instagram/user_movie_DB.txt>로 만들었다.
 
