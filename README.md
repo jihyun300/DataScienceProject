@@ -15,21 +15,18 @@ Preference Shooting(취향저격프로젝트)
 - Data Learning model: [SVM](http://scikit-learn.org/stable/modules/svm.html)
 
 ### Process
+    [1. Construct Movie DB, Music DB, and Brand DB](#1-construct-movie-db-music-db-and-brand-db)
+ 
+    [2. Search Instagram user ID including movie tags](#2-search-instagram-user-id-including-movie-tags)
+ 
+    [3. Search brand name and music tags for each user id](3-search-brand-name-and-music-tags-for-each-user-id)
+ 
+    [4. Train the data with SVM model](4-train-the-data-with-svm-model)
+ 
+    [5. Make application to evaluate the model](5-make-application-to-evaluate-the-model)
+ 
+    [6. Result](6-result)
 
-'''
- [1. Construct Movie DB, Music DB, and Brand DB](#1-construct-movie-db-music-db-and-brand-db)
- 
- [2. Search Instagram user ID including movie tags](#2-search-instagram-user-id-including-movie-tags)
- 
- [3. Search brand name and music tags for each user id](3-search-brand-name-and-music-tags-for-each-user-id)
- 
- [4. Train the data with SVM model](4-train-the-data-with-svm-model)
- 
- [5. Make application to evaluate the model](5-make-application-to-evaluate-the-model)
- 
- [6. Result](6-result)
-
-'''
 ****
 ## 1. Construct Movie DB, Music DB, and Brand DB
 우리는 영화와 음악 그리고 브랜드 데이터를 수집하였다. 
