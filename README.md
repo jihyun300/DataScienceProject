@@ -26,10 +26,13 @@ Preference Shooting(취향저격프로젝트)
 영화는 [iMDB](http://www.imdb.com/)에서 1992년부터 2014년까지의 영화 68,316개를 직접 crawling하였고, 각 영화마다 7개의 feature(장르, 감독, 평점, 평점개수, 제목, 출연자, 연도)를 모았다.
 우리가 원하는 음악 데이터를 모으기 위해 여러 사이트와 api를 찾아다닌 결과, [The Echo Nest](http://static.echonest.com/enspex/)에서는 꽤나 큰 음악 database를 가지고 있었고, 그 중 우리가 필요로 했던 여러 feature 정보도 포함하고 있었다. 본 프로젝트에서는 The Echo Nest api를 통해 음악 제목, id, 아티스트, enery, liveness, tempo, speechiness, acousticness, danceability, instrumentalness, loudness, valeance, song hotttness, song type, artist terms 정보를 포함한 음악 3,256개를 모았다.
 마지막으로 apparel search 웹사이트를 통해 342개의 apparel brand 리스트를 얻었다.
-'''
+
 > Movie/parser.py -> iMDB 사이트를 파싱하여 Movie_DB.txt를 만든다.
+
 > Music/get_music_data.py -> echo nest api를 이용해 Music_DB.txt를 만든다.
+
 > Brand/brandlist.py -> brand_DB.txt를 만든다.
+
 아래 screenshot은 우리가 모은 영화와 음악 데이터셋의 일부이다.
 <p align="center">
  <img src="screenshots/prefer-movie.png" width="40%"></img> <img src="screenshots/prefer-music.png" width="40%"></img>
