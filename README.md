@@ -69,11 +69,13 @@ Preference Shooting(취향저격프로젝트)
 
 ## 5. Make application
 학습된 모델의 성능을 평가하기 위해 우리는 인스타그램 username을 입력하면, 그 유저의 게시글을 분석해 vector로 만들고, 학습된 모델에 넣어 해당 사람이 좋아할만한 브랜드를 출력하는 프로그램을 구현하였다. 
+
 이 어플리케이션은 우리가 만든 시스템이 실제로 작동한다는 것을 보여주기 위한 하나의 예일 뿐이다. 
+
 우리는 궁극적으로 이 시스템을 브랜드 회사에서 이용하여 자신의 브랜드를 사용하는 사람들이 어떤 영화나 음악을 좋아하는 지 알게되면 그에 맞춰 마케팅 전략을 더욱 효율적으로 짤 수 있기를 바란다.
 
 ## 6. Result
 instagram을 통해 유저 데이터를 얻는데 시간이 너무 오래걸려 데이터를 많이 뽑아내지 못했다. 950개정도의 training set으로 얻은 f1-score은 0.12정도로 낮지만, training set만 충분히 구축된다면 더 나은 성능을 기대해 볼 수 있다.
 <p align="center">
- <img src="screenshots/prefer-result2.png" width="60%"></img>
+ <img src="screenshots/prefer-result2.png" width="40%"></img>
 </p>
