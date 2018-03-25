@@ -13,20 +13,21 @@ Preference Shooting(취향저격프로젝트)
 - Database: IMDB(6099 movies), Apparel search(342 brands)
 - API: Instagram API, The Echo nest(3256 musics)
 - Data Learning model: [SVM](http://scikit-learn.org/stable/modules/svm.html)
-******
-## Process
-[1. Construct Movie DB, Music DB, and Brand DB](#1-construct-movie-db-music-db-and-brand-db)
 
-[2. Search Instagram user ID including movie tags](#2-search-instagram-user-id-including-movie-tags)
+### Process
+> [1. Construct Movie DB, Music DB, and Brand DB](#1-construct-movie-db-music-db-and-brand-db)
 
-[3. Search brand name and music tags for each user id](3-search-brand-name-and-music-tags-for-each-user-id)
+> [2. Search Instagram user ID including movie tags](#2-search-instagram-user-id-including-movie-tags)
 
-[4. Train the data with SVM model](4-train-the-data-with-svm-model)
+> [3. Search brand name and music tags for each user id](3-search-brand-name-and-music-tags-for-each-user-id)
 
-[5. Make application to evaluate the model](5-make-application-to-evaluate-the-model)
+> [4. Train the data with SVM model](4-train-the-data-with-svm-model)
 
-[6. Result](6-result)
+> [5. Make application to evaluate the model](5-make-application-to-evaluate-the-model)
 
+> [6. Result](6-result)
+
+****
 ## 1. Construct Movie DB, Music DB, and Brand DB
 우리는 영화와 음악 그리고 브랜드 데이터를 수집하였다. 
 영화는 [iMDB](http://www.imdb.com/)에서 1992년부터 2014년까지의 영화 68,316개를 직접 crawling하였고, 각 영화마다 7개의 feature(장르, 감독, 평점, 평점개수, 제목, 출연자, 연도)를 모았다.
