@@ -8,7 +8,7 @@ Preference Shooting(취향저격프로젝트)
 - Version control tool: Github
 - Database: IMDB(6099 movies), Apparel search(342 brands)
 - API: Instagram API, The Echo nest(3256 musics)
-- Data Learning model: [SVM](http://scikit-learning.org/stable/modules/svm.html)
+- Data Learning model: [SVM](http://scikit-learn.org/stable/modules/svm.html)
 # 2. Procedure
 ## A. Construct Movie DB, Music DB, and Brand DB
 
