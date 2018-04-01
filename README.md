@@ -57,7 +57,7 @@ Preference Shooting(취향저격프로젝트)
 이렇게 검색한 영화들로 이 영화를 태그한 사용자 정보를 모아 /instagram/user_movie_DB.txt로 만들었다.
 
 ## 3. Search brand name and music tags for each user id
-이제 이 유저들이 올린 모든 게시글을 탐색하면서 태그된 음악과 브랜드를 모두 찾아낸다. 이때, 태그를 검색해야 하는데, 매번 검색하기 번거로워서 검색 가능한 태그를 모두 뽑아 놓는데, 그게 tag_search.py이고, 여기서 만들어지는 태그들은 music_tag.txt, brand_tag.txt로 만들어진다.
+이제 이 유저들이 올린 모든 게시글을 탐색하면서 태그된 음악과 브랜드를 모두 찾아낸다. 이때, 태그를 검색해야 하는데, 매번 검색하기 번거로워서 검색 가능한 태그를 모두 뽑아 놓는데, 그게 [tag_search.py](Instagram/tag_search.py)이고, 여기서 만들어지는 태그들은 music_tag.txt, brand_tag.txt로 만들어진다.
 
 ## 4. Train the data with SVM model
 이 과정이 모두 끝나면 training.txt가 만들어지는데, 여기 들어간 자료는 어떤 사용자가 태그를 건 영화들과 음악들, 그리고 브랜드가 들어간다. 
@@ -71,8 +71,8 @@ Preference Shooting(취향저격프로젝트)
  <img src="screenshots/prefer-vector.png" width="50%"></img>
 </p>
 
-그리고 y 벡터는 모든 브랜드가 있고 그 중 하나만 1이고, 나머지는 모두 0인 벡터가 된다. 이 벡터를 만드는 과정은 data_vector.py에서 확인할 수 있고, 결과는 x.p, y.p파일이다.
-이제 러닝모델에 만든 벡터파일을 넣고 학습시키면 되는데 우리는 **SVM**을 사용하였고, 파라미터는 **grid search**를 통해 결정했다. 이 결과 만들어지는 모델을 SVM.pkl로 저장하였다.이 과정은 train.py에서 확인할 수 있다.
+그리고 y 벡터는 모든 브랜드가 있고 그 중 하나만 1이고, 나머지는 모두 0인 벡터가 된다. 이 벡터를 만드는 과정은 [data_vector.py](Train/data_vector.py)에서 확인할 수 있고, 결과는 x.p, y.p파일이다.
+이제 러닝모델에 만든 벡터파일을 넣고 학습시키면 되는데 우리는 **SVM**을 사용하였고, 파라미터는 **grid search**를 통해 결정했다. 이 결과 만들어지는 모델을 SVM.pkl로 저장하였다.이 과정은 [train.py](Train/train.py)에서 확인할 수 있다.
 
 ## 5. Make application
 학습된 모델의 성능을 평가하기 위해 우리는 인스타그램 username을 입력하면, 그 유저의 게시글을 분석해 vector로 만들고, 학습된 모델에 넣어 해당 사람이 좋아할만한 브랜드를 출력하는 프로그램을 구현하였다. 
